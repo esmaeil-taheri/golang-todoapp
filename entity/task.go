@@ -3,10 +3,10 @@ package entity
 import "time"
 
 type Task struct {
-	ID int
+	ID uint
 	Title string
 	DueDate time.Time
-	CategoryId int
+	CategoryId uint
 	IsDone bool
-	UserID int
+	UserID uint
 }
