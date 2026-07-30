@@ -2,7 +2,7 @@ package param
 
 import "todoapp/entity"
 
-type CreateCategoryResult struct {
+type CreateCategoryRequest struct {
 	Title string `json:"title"`
 	Color string `json:"color"`
 	UserID uint `json:"-"`

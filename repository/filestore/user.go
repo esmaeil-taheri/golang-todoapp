@@ -39,7 +39,7 @@ func (s *UserStore) load() error {
 
 		return fmt.Errorf("can't open user file: %w", err)
 	}
-	file.Close()
+	defer file.Close()
 
 	scanner := bufio.NewScanner(file)
 	for scanner.Scan() {

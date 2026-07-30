@@ -1,12 +1,10 @@
 package entity
 
-import "time"
-
 type Task struct {
 	ID uint
 	Title string
-	DueDate time.Time
-	CategoryId uint
+	DueDate string
+	CategoryID uint
 	IsDone bool
 	UserID uint
 }
